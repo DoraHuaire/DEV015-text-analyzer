@@ -3,11 +3,41 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <script src="index.js" type="module"></script>
+  
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+  
+  <main>
+    <ul>
+      <li class="metricas">Caracteres:</li>
+      <li class="metricas">Caracteres sin espacio:</li>
+      <li class="metricas">Palabras:</li>
+      <li class="metricas">Números:</li>
+      <li class="metricas">Suma de números:</li>
+      <li class="metricas">Promedio de longitud:</li>
+    </ul>
+
+    <form action="">
+      <textarea name="user-input" placeholder="Escribe aquí..."></textarea> <br>
+    </form>
+
+    <div>
+      <button id="reset-button">Limpiar métricas</button>  
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>Autora: Dora Huaire Solis</p>
+  </footer>
+
 </body>
 </html>

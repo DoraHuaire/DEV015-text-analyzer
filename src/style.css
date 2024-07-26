@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box; /* Para que el ancho y alto no aplique solo a la caja sino los incluya también  */
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: #EBEBEB;
+    font-size: 62.5%; /*1rem = 10px*/
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    padding: 7rem 25rem 7rem 25rem;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+header{
+    background-color: #7366F0;
+    padding: 1.8rem;
+    color: #FFFFFF;
+    text-align: center;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+main{
+    background-color: #ffff;
+    padding: 2rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+/* Estilos de la Lista*/
+
+ul{
+    list-style: none;
+    display: flex; /*se alinean uno al lado del otro*/
+    flex-wrap: wrap; /*aparecerán uno al lado de otro, en la misma fila, pero si no hubiera espacio, los colocaríamos en una fila de abajo*/
+    column-gap: 5rem; /* Espacio entre columnas*/
+    row-gap: 1rem; /* Espacio entre filas*/
+    justify-content:center;
+}
+
+
+.metricas{
+    background-color: #EBEBEB;
+    border: none;
+    margin: 0rem 2rem 1rem 2rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+/* Estilos del formulario*/
+
+form {
+    display: flex; /*ayuda a colocar las cajas como si fueran celdas de tablas*/
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+textarea[name="user-input"] {
+    width: 60rem; /* Ancho */
+    height: 15rem; /* altura */
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none; 
+    background-color: #EBEBEB;
+}
+
+/* Estilos del boton*/
+
+div{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#reset-button{
+    background-color: #7467F3;
+    border: none;
+    border-radius: 3rem;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del pie de página*/
+
+footer{
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
