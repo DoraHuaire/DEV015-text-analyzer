@@ -1,48 +1,18 @@
-# Analizador de texto
 
-## Índice
-
-* [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Resumen del proyecto](#3-resumen-del-proyecto)
-* [4. Funcionalidades](#4-funcionalidades)
-* [5. Boilerplate](#5-boilerplate)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Pruebas](#7-pruebas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Consideraciones para pedir tu Project Feedback](#9-consideraciones-para-pedir-tu-project-feedback)
-* [10. Objetivos de aprendizaje](#10-objetivos-de-aprendizaje)
-* [11. Funcionalidades opcionales](#11-funcionalidades-opcionales)
+## Analizador de texto 📑📖
 
 ***
 
-## 1. Consideraciones generales
+## 1. Resumen del proyecto
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 2 a 4 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+En este proyecto se ha diseñadouna aplicación web que permite a  la usuaria analizar un texto en el navegador según los siguientes indicadores: el número de caracteres, el número de caracteres sin espacio, el número de palabras, el conteo de números, la suma de números y el promedio de longitud de las palabras que hayan sidoenviadas como _input_ por ella.  
+
+Para el diseño de la aplicación se ha utilizado CSS, HTML y JavaScrip
+Además, se ha implementado diversas expresiones regulares para números, letras, caracteres especiales, entre otros. Los resultado pueden verse en tiempo real a medida que la usuaria escribe su texto.
 
 ## 2. Preámbulo
 
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
-
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
+Se ha elavorado un analizador de texto, estaEsta herramienta de análisis de textos ofrece informaciones sobre la complejidad de un texto y estadísticas sobre la frecuencia de las palabras y el número de caracteres. Es útil para cualquier tipo de escritor (autor, periodista, estudiante, etc.) que escribe textos con un determinado número de palabras. 
 
 En general, las aplicaciones de análisis de texto brindan información
 valiosa y métricas sobre los textos que pueden ayudar a las usuarias a
@@ -50,87 +20,25 @@ tomar decisiones informadas y sacar conclusiones significativas.
 Mediante el uso de estas herramientas de análisis, las usuarias pueden
 obtener una comprensión más profunda de los textos.
 
-## 3. Resumen del proyecto
-
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
-pueda analizar un texto en el navegador mostrando una serie de indicadores y
-métricas específicas sobre caracteres, letras, números, etc. Que hayan sido
-enviadas como _input_ por ella. Lo harás utilizando HTML, CSS y JavaScript.
-
 ## 4. Funcionalidades
 
-El listado de funcionalidades es el siguiente:
+El listado de funciones se ejecuta en tiempo real ya medida que la usuaria escribe su texto es:
 
-1. La aplicación debe permitir a la usuaria ingresar un texto escribiéndolo
-en un cuadro de texto.
+Recuento de palabras : La aplicación cuenta el número de palabras en el texto de entrada.
+Recuento de caracteres : La aplicación cuenta el número de caracteres en el texto de entrada, incluidos espacios y signos de puntuación.
+Recuento de caracteres excluyendo espacios y signos de puntuación : La aplicación cuenta el número de caracteres, excluyendo espacios y signos de puntuación.
+Recuento de números : La aplicación cuenta cúantos números hay en el texto de entrada.
+Suma total de números : La aplicación suma todos los números que hay en el texto de entrada.
+Longitud media de las palabras : La aplicación calcula la longitud media de las palabras en el texto de entrada.
+Además, la aplicación permite ejecutar análisis nuevos de acuerdo con la necesidad del usuario.
 
-2. La aplicación debe calcular las siguientes métricas y actualizar el
-resultado en tiempo real a medida que la usuaria escribe su texto:
 
-    - **Recuento de palabras**: la aplicación debe poder contar el número de
-    palabras en el texto de entrada y mostrar este recuento a la usuaria
-    - **Recuento de caracteres**: la aplicación debe poder contar el número de
-    caracteres en el texto de entrada, incluidos espacios y signos de
-    puntuación, y mostrar este recuento a la usuaria.
-    - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
-    la aplicación debe poder contar el número de caracteres en el texto de
-    entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
-    a la usuaria.
-    - **Recuento de números**: la aplicación debe contar cúantos números hay en
-    el texto de entrada y mostrar este recuento a la usuaria.
-    - **Suma total de números**: la aplicación debe sumar todos los números que
-    hay en el texto de entrada y mostrar el resultado a la usuaria.
-    - **Longitud media de las palabras**: la aplicación debe calcular la
-    longitud media de las palabras en el texto de entrada y mostrársela a la usuaria.
+## 1. Consideraciones generales
 
-3. La aplicación debe permitir limpiar el contenido de la caja de texto haciendo
-clic en un botón.
+* Este proyecto ha sido elavorado  de forma **individual**.
+* El tiempo total a sido de 2 sprints.
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
 
-## 5. Boilerplate
-
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
-archivos y configuración inicial de dependencias y tests.
-
-El boilerplate que les damos contiene esta estructura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
-
-### Descripción de scripts / archivos
-
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
-* `.github/workflows`: esta carpeta contine la configuracion para la ejecution
-  de Github Actions. No debes modificar esta carpeta ni su contenido.
-* `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de
-  aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
-* [`src/index.html`](./src/index.html): este es el punto de entrada a tu
-  aplicación. Este archivo debe contener tu HTML.
 * [`src/style.css`](./src/style.css): este archivo debe contener las reglas de
   estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
   uso de frameworks de CSS (Bootstrap, Materialize, etc).
@@ -155,32 +63,13 @@ El boilerplate que les damos contiene esta estructura:
   Para ejemplo de uso de cada función recomendamos ver el archivo
   [`test/analyzer.spec.js`](./test/analyzer.spec.js).
 
-  _Nota:  para simplificar las funcionalidades, definiremos las palabras como
-  un grupos de caracteres separados por espacios. Por ejemplo las palabras del
-  texto de entrada `¡Si, Tú puedes hacerlo!` son cuatro:_
-
-  - _`¡Si,`_
-  - _`Tú`_
-  - _`puedes`_
-  - _`hacerlo!`_
 
 * [`src/index.js`](./src/index.js): acá debes escuchar eventos del DOM, invocar
   los métodos del objeto `analyzer` según sea necesario y actualizar el resultado
   en la UI (interfaz de usuaria).
-* [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
-pruebas unitarias para los métodos del objeto `analyzer`.
 
 ***
 
-#### Deploy
-
-Hacer que los sitios estén publicados (o _desplegados_) para que usuarias de
-la web puedan acceder a él es algo común en proyectos de desarrollo de software.
-
-En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
-
-El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
- consultar su [documentación oficial](https://docs.github.com/es/pages).
 
 ## 6. Criterios de aceptación mínimos del proyecto
 
@@ -728,61 +617,3 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
   * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
 </p></details>
-
-#### Módulos
-
-- [ ] **Módulos de ECMAScript (ES Modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-### Control de Versiones (Git y GitHub)
-
-#### Git
-
-- [ ] **Git: Instalación y configuración**
-
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
-
-#### GitHub
-
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-
-- [ ] **GitHub: Despliegue con GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Sitio oficial de GitHub Pages](https://pages.github.com/)
-</p></details>
-
-### Centrado en el usuario
-
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
-
-### Diseño de producto
-
-- [ ] **Diseñar en distintos niveles de fidelidad**
-
-- [ ] **Seguir los principios básicos de diseño visual**
-
-## 11. Funcionalidades opcionales
-
-Si terminaste con todas las [funcionalidades requeridas](#3-funcionalidades),
-intenta implementar las siguientes funcionalidades opcionales para
-profundizar en los objetivos de aprendizaje del proyecto:
-
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto vacía.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo espacios.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo caracteres de puntuación.
-
-Puedes habilitar las pruebas unitarias y en _end to end_ de estos casos
-en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
-[read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
-También tendrás que ajustar las pruebas ya existentes de las
-funcionalidades requeridas.

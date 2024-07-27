@@ -63,7 +63,7 @@ const analyzer = {
       return 0;
     } 
     
-    const sum = numberSum.reduce(function(total, num) {
+    const sum = numberSum.reduce((total, num) => {
       return total + parseFloat(num);
     }, 0);
     return sum;
