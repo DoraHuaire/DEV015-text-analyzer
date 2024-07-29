@@ -58,7 +58,7 @@ const analyzer = {
   //parseInt es una función que comprueba el primer argumento  e intenta devolver un entero de la base especificada. 
   //no debe sumar números que esten dentro de una cadenas de texto 
   getNumberSum: (text) => {
-    const numberSum = text.match(/\b\d(\.\d+)?\b/g);
+    const numberSum = text.match(/\b\d+(\.\d+)?\b/g);
     if (!numberSum){
       return 0;
     } 
