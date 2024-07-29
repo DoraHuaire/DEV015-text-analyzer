@@ -48,9 +48,7 @@ test/analyzer.spec.js: Este archivo contiene las pruebas unitarias realizadas pa
 
 ## 5. Deploy
 
-La aplicación se encuentra en Github Pages - [Linkk del proyecto](https://dorahuaire.github.io/DEV015-text-analyzer/src/)
-
-Link.
+La aplicación se encuentra en Github Pages - [link](https://dorahuaire.github.io/DEV015-text-analyzer/src/ "link")
 
 ## 6. Test
 
