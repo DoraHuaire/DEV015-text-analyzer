@@ -3,6 +3,9 @@
 
 ***
 
+![analizador final](https://github.com/DoraHuaire/DEV015-text-analyzer/blob/main/analizador.png)
+
+
 ## 1. Resumen del proyecto
 
 En este proyecto se ha diseñadouna aplicación web que permite a  la usuaria analizar un texto en el navegador según los siguientes indicadores: el número de caracteres, el número de caracteres sin espacio, el número de palabras, el conteo de números, la suma de números y el promedio de longitud de las palabras que hayan sidoenviadas como _input_ por ella.  
