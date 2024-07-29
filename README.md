@@ -2,6 +2,7 @@
 ## Analizador de texto 📑📖
 
 ***
+![analizador final](/analizador.png)
 
 ## 1. Resumen del proyecto
 
